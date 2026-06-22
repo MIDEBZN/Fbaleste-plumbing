@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Nos Services" description="Découvrez l'ensemble de nos services de plomberie à Bruxelles : débouchage, fuites, chauffage et rénovation de salle de bain.">
+  <main>
+    <section class="hero" style="min-height: 50vh; display: flex; align-items: center; padding-top: 8rem; padding-bottom: 4rem;">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <h1 class="animate-fade-in" style="text-align: center;">Nos Services de Plomberie</h1>
+        <p class="animate-fade-in" style="text-align: center; max-width: 600px; margin: 0 auto; animation-delay: 0.2s;">Des solutions complètes pour tous vos besoins en plomberie, chauffage et sanitaires à Bruxelles.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+          <div class="card">
+            <h3>🚰 Dépannage Plomberie</h3>
+            <p>Recherche et réparation de fuites, remplacement de robinetterie, réparation de chasse d'eau et de tuyauterie endommagée.</p>
+            <a href="/contact" style="color: var(--secondary); font-weight: 600;">Demander une intervention →</a>
+          </div>
+          <div class="card">
+            <h3>🚽 Débouchage Canalisations</h3>
+            <p>Débouchage professionnel de vos éviers, lavabos, WC, douches et baignoires. Inspection par caméra si nécessaire.</p>
+            <a href="/contact" style="color: var(--secondary); font-weight: 600;">Demander une intervention →</a>
+          </div>
+          <div class="card">
+            <h3>🔥 Chauffage</h3>
+            <p>Installation, entretien et réparation de chaudières, radiateurs et chauffe-eaux. Optimisation de votre système de chauffage.</p>
+            <a href="/contact" style="color: var(--secondary); font-weight: 600;">Demander une intervention →</a>
+          </div>
+          <div class="card">
+            <h3>🛁 Rénovation Salle de Bain</h3>
+            <p>Création complète ou rénovation de salle de bain. Installation de douche à l'italienne, baignoire, meubles et faïence.</p>
+            <a href="/contact" style="color: var(--secondary); font-weight: 600;">Demander une intervention →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

@@ -1,0 +1,70 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact" description="Contactez Fbaleste pour toute urgence de plomberie ou demande de devis à Bruxelles.">
+  <main>
+    <section class="hero" style="min-height: 50vh; display: flex; align-items: center; padding-top: 8rem; padding-bottom: 4rem;">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <h1 class="animate-fade-in" style="text-align: center;">Contactez-Nous</h1>
+        <p class="animate-fade-in" style="text-align: center; max-width: 600px; margin: 0 auto; animation-delay: 0.2s;">Besoin d'un dépannage urgent ou d'un devis pour vos travaux ? Notre équipe est à votre disposition.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
+          
+          <div class="card">
+            <h2 style="color: var(--secondary); margin-bottom: 2rem;">Informations de Contact</h2>
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="font-size: 1.5rem;">📞</span>
+                <div>
+                  <h4 style="margin-bottom: 0.25rem;">Téléphone</h4>
+                  <p style="margin-bottom: 0;"><a href="tel:+3221234567" style="color: #fff; font-weight: 600;">+32 2 123 45 67</a></p>
+                  <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0;">(Ligne d'urgence 24/7)</p>
+                </div>
+              </div>
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="font-size: 1.5rem;">✉️</span>
+                <div>
+                  <h4 style="margin-bottom: 0.25rem;">Email</h4>
+                  <p style="margin-bottom: 0;"><a href="mailto:contact@fbaleste.be" style="color: #fff;">contact@fbaleste.be</a></p>
+                </div>
+              </div>
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="font-size: 1.5rem;">📍</span>
+                <div>
+                  <h4 style="margin-bottom: 0.25rem;">Adresse</h4>
+                  <p style="margin-bottom: 0;">Rue de la Plomberie 1<br/>1000 Bruxelles, Belgique</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 style="color: var(--secondary); margin-bottom: 2rem;">Envoyez un Message</h2>
+            <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 1.5rem;">
+              <div>
+                <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Nom complet</label>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 0.75rem; border-radius: 0.5rem; border: 1px solid var(--border-color); background: rgba(15, 23, 42, 0.5); color: #fff;">
+              </div>
+              <div>
+                <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Téléphone</label>
+                <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 0.75rem; border-radius: 0.5rem; border: 1px solid var(--border-color); background: rgba(15, 23, 42, 0.5); color: #fff;">
+              </div>
+              <div>
+                <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Description du problème</label>
+                <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 0.75rem; border-radius: 0.5rem; border: 1px solid var(--border-color); background: rgba(15, 23, 42, 0.5); color: #fff;"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer la demande</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="À Propos" description="En savoir plus sur Fbaleste, votre entreprise de plomberie de confiance basée à Bruxelles.">
+  <main>
+    <section class="hero" style="min-height: 50vh; display: flex; align-items: center; padding-top: 8rem; padding-bottom: 4rem;">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <h1 class="animate-fade-in" style="text-align: center;">À Propos de Fbaleste</h1>
+        <p class="animate-fade-in" style="text-align: center; max-width: 600px; margin: 0 auto; animation-delay: 0.2s;">L'expertise et le savoir-faire au service de vos installations sanitaires depuis plus de 10 ans.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div style="display: flex; flex-direction: column; gap: 3rem;">
+          <div class="card" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+            <div style="flex: 1; min-width: 300px;">
+              <h2>Notre Histoire</h2>
+              <p>Fondée avec la volonté de redonner ses lettres de noblesse au métier de plombier, Fbaleste s'est imposée comme une référence incontournable à Bruxelles. Notre mission a toujours été d'allier technicité irréprochable et relation client basée sur l'honnêteté.</p>
+              <p>Aujourd'hui, notre équipe s'est agrandie mais nos valeurs restent les mêmes : travail bien fait, respect des délais et satisfaction totale de nos clients.</p>
+            </div>
+          </div>
+          
+          <div>
+            <h2 style="text-align: center; margin-bottom: 2rem;">Nos Engagements</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+              <div class="card" style="text-align: center;">
+                <h3>🛡️ Qualité Garantie</h3>
+                <p>Nous n'utilisons que du matériel certifié et des pièces de grandes marques pour assurer la pérennité de vos installations.</p>
+              </div>
+              <div class="card" style="text-align: center;">
+                <h3>🤝 Service Client</h3>
+                <p>À votre écoute 7j/7, nous vous conseillons avec bienveillance et trouvons la solution la plus adaptée à votre budget.</p>
+              </div>
+              <div class="card" style="text-align: center;">
+                <h3>🌱 Respect Environnement</h3>
+                <p>Nous privilégions les solutions écologiques et le traitement responsable de nos déchets d'intervention.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
